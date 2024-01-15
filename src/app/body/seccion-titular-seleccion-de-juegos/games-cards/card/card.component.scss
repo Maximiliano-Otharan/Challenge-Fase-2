@@ -1,0 +1,80 @@
+.containerCard {
+    width: 397px;
+    height: 510px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF33;
+    box-shadow: 0px 4px 20px -1px #00000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(217, 217, 217, 0.042) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+
+    &__img {
+        width: 361px;
+        height: 265px;
+        border-radius: 10px;
+        border: 1px solid #FFFFFF33;
+        box-shadow: 0px 4px 20px -1px #00000000;
+    }
+
+    &__containerText {
+        width: 355px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        .containerText__title {
+            width: 204px;
+            height: 27px;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #FFFFFF;
+        }
+
+        .containerText__userInfo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .userInfo__user {
+                text-align: start;
+                margin-left: 10px;
+
+                .user__name {
+                    width: 200px;
+                    height: 20px;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0.035em;
+                    text-align: left;
+                    color: #FFFFFF;
+                    margin: 0px;
+                }
+
+                .user__sponsor {
+                    width: 100px;
+                    height: 11px;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: 11px;
+                    letter-spacing: 0.035em;
+                    text-align: left;
+                    color: #FFFFFF;
+                    margin-top: 12px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

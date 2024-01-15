@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de tamaño igual */
+    grid-template-rows: repeat(2, 1fr);    /* Dos filas de tamaño igual */
+    gap: 10px;                            /* Espacio entre las celdas */
+    width: 100%;                         /* Ancho del contenedor de la cuadrícula */
+    margin: 77px auto;
+
+    &__card {
+        text-align: center;
+    }
+}

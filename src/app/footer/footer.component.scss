@@ -1,0 +1,28 @@
+.containerFooter {
+    width: 100vw;
+    height: 530px;
+    background-image: url('../../assets/Footer/artBoardFooter.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+
+
+    &__content {
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 83px;
+    }
+
+    &__copyright {
+        text-align: start;
+        padding-left: 83px;
+    }
+}

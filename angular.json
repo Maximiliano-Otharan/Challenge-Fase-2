@@ -22,8 +22,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/challenge-angular-fase-2",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -107,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,81 @@
+@mixin displayBlocks($width, $height) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: $width;
+    height: $height;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@mixin titles ($width, $height) {
+    width: $width;
+    height: $height;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+@mixin links() {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 33px;
+}
+
+.containerLinksNav {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    &__blocksLinks--1 {
+        @include displayBlocks(125px, 170px);
+
+        .blocksLinks--1__title {
+            @include titles(98px, 20px);
+        }
+
+        .blocksLinks--1__links {
+            @include links();
+        }
+    }
+
+    &__blocksLinks--2 {
+        @include displayBlocks(95px, 170px);
+        
+        .blocksLinks--2__title {
+            @include titles(48px, 20px);
+        }
+
+        .blocksLinks--2__links {
+            @include links();
+        }
+    }
+
+    &__blocksLinks--3 {
+        @include displayBlocks(167px, 170px);
+        
+        .blocksLinks--3__title {
+            @include titles(110px, 20px);
+        }
+
+        .blocksLinks--3__links {
+            @include links();
+        }
+    }
+    
+}

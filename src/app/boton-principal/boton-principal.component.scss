@@ -1,0 +1,27 @@
+.btnPrincipal {
+    width: 232px;
+    height: 74px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #530cf7 24%, #eb81f5, #f803e4);
+    transform: skewX(-20deg);
+    transform-origin: center center;
+    transition: background 0.2s ease-in;
+
+    &:hover {
+        background: #FF8B8B;
+    }
+
+    &__elementText {
+        font-family: 'Ondo', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 22px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: #FFFF;
+        transform: skewX(20deg);
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}

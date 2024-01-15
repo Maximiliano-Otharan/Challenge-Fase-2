@@ -1,0 +1,39 @@
+@mixin btns($color) {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $color;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 100px;
+    margin-top: 55.7px;
+    width: 647.83px;
+    height: 34.86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__btns {
+        width: 284px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .btns__btn-appsAndGames {
+            @include btns(#FFFFFF);
+        }
+        
+        .btns__btn-topGames {
+            @include btns(#FF8B8B);
+        }
+    }
+    
+}
+

@@ -1,0 +1,29 @@
+.btnDemo {
+    width: 361px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #530cf7 24%, #eb81f5, #f803e4);
+    transform: skewX(-20deg);
+    transform-origin: center center;
+    margin: 0px;
+    margin-top: 26px;
+    transition: background 0.2s ease-in;
+
+    &:hover {
+        background: #FF8B8B;
+    }
+
+    &__elementText {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        transform: skewX(20deg);
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}

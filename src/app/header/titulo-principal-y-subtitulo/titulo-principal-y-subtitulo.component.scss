@@ -1,0 +1,47 @@
+@mixin styleText ($font-family-1, $font-familt-2, $font-size, $font-weight, $line-height, $letter-spacing, $text-align, $color){
+        font-family: $font-family-1, $font-familt-2;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing;
+        text-align: $text-align;
+        color: $color;
+}
+
+.conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__titulo {
+        width: 578.09px;
+        height: 250PX;
+        padding-left: 103px;
+
+        @include styleText('Ondo', sans-serif, 69px, 800, 76px, 0.04em, left, #FFFFFF);
+        text-transform: uppercase;
+        white-space: pre-line;
+
+        .titulo__elementText {
+            background: linear-gradient(to right, #530cf7 24%, #eb81f5, #f803e4);
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+    }
+
+    &__subtitulo {
+        width: 602px;
+        height: 105px;
+        padding-left: 103px;
+
+        @include styleText('lato', sans-serif, 19px, 400, 35px, 0.04em, left, #FFFFFF)
+    }
+
+    &__btns {
+            padding-left: 103px;
+        .btns__btn-secundario {
+                margin-left: 17.2px;
+        }
+    }
+}

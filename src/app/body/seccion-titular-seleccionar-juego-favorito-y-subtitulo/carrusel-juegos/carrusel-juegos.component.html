@@ -1,0 +1,9 @@
+<div class="carrusel">
+    <img class="carrusel__img--1" [src]="juegos[anterior]" alt="" (click)="click(-1)">
+    <img class="carrusel__img--2" [src]="juegos[indiceActual]" alt="">
+    <img class="carrusel__img--3" [src]="juegos[siguiente]" alt="" (click)="click(1)">
+</div>
+<div class="carrusel--btns">
+    <app-boton-principal class="carrusel--btns__btn--principal" buttonText="View All"/>
+    <app-boton-secundarion class="carrusel--btns__btn--secundario" buttonText="Play Now"/>
+</div>
